@@ -159,5 +159,12 @@
     "dob": "1990-04-02",
     "salary": 68000,
     "department": "CSE"
+  },
+  {
+    "fullName": "sam",
+    "age": 12,
+    "dob": "02/09/2023",
+    "salary": 0,
+    "department": "NA"
   }
 ]
