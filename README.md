@@ -5,8 +5,10 @@ This console application allows you to manage employee information, including ad
 # Installation
 1. Clone the repository to your local machine:
    bash -> `git clone https://github.com/your-username/employee-management-console.git`
-2. Navigate to the project directory:
+   
+3. Navigate to the project directory:
    `cd employee-management`
+   
 3.Install dependencies:
   `npm install`
 
@@ -29,8 +31,9 @@ This will start the console application and display the main menu.
    7. Get Average Salary by Department: Calculate the average salary in a specified department.
    8. Get Average Salary in Company: Calculate the overall average salary in the company.
    9. Exit: Quit the application.
-Adding an Employee
 
+       
+# Adding an Employee
 When choosing option 2, you will be prompted to enter details for the new employee:
 
     Full Name
@@ -55,4 +58,4 @@ When choosing option 6, enter the full name to search for a specific employee.
 Options 7 and 8 allow you to calculate the average salary based on the specified department or for the entire company.
 
 # Data Storage
-Employee data is stored in the data/employees.json file. This file is automatically created and updated as you add, update, or delete employees.
+Employee data is stored in the `data/employees.json` file. This file is automatically created and updated as you add, update, or delete employees.
