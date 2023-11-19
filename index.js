@@ -2,6 +2,8 @@
 const readlineSync = require('readline-sync');
 const Employee = require('./src/employee');
 const EmployeeManager = require('./src/employeeManager');
+require('dotenv').config();
+
 
 function displayMenu() {
     console.log('1. Show all Employees');
@@ -21,15 +23,15 @@ async function main() {
         displayMenu();
         choice = readlineSync.question('Enter your choice: ');
 
-        switch (choice) {
-            case '1':
-                try {
-                    const allEmployees = await EmployeeManager.getAllEmployees();
-                    console.log(allEmployees);
-                } catch (error) {
-                    console.error('Error fetching employees:', error.message);
-                }
-                break;
+      switch (choice) {
+      case '1':
+        try {
+          const allEmployees = await EmployeeManager.getAllEmployees();
+          console.log(allEmployees);
+        } catch (error) {
+          EmployeeManager.handleError(error.message);
+        }
+        break;
             case '2':
                 addEmployee();
                 break;
